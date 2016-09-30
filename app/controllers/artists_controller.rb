@@ -1,4 +1,5 @@
 class ArtistsController < ApplicationController
+  
   def index
     if Preference.last.nil?
       @artists = Artist.all
